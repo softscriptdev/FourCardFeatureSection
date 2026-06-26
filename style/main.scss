@@ -32,9 +32,10 @@ body {
   }
 
   main {
-    max-width: 900px;
+    max-width: 1200px;
     display: grid;
     gap: 1rem;
+    margin: 0 1rem;
 
     @media (width > 710px) {
       grid-template-columns: repeat(2, 1fr);
@@ -59,6 +60,7 @@ body {
       height: fit-content;
       display: block;
       margin: auto;
+      cursor: pointer;
 
       @media (width > 1050px) {
         &:nth-child(1) {
@@ -78,6 +80,7 @@ body {
 
       &:hover {
         border-bottom: 2px solid var(--border, blue);
+        translate: 0 -2.5px;
       }
 
       &::after {
